@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Khula", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #16d9e3;
+}
+
+.start {
+  font-size: 1.5rem;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  position: relative;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.time-btn:hover {
+  border: 2px solid #16d9e3;
+  color: #16d9e3;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.hideOpacity{
+  opacity: 0;
+}
+
+
+.primary {
+  color: #16d9e3;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+  box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.circle {
+  background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* =======HACK========  */
+
+.cheat{
+  background-color: #fff;
+  height: 6.216006%; /* 80px/1287 */
+  width: 3.513703%; /* 50px/1423 */
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+} 
+
+
+/* ======BUTTONS=========  */
+
+.buttons{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.last-buttons{
+  
+  bottom: 7.770008%; /* 100/1287 */
+  max-height: 100px;
+  height: 100%;
+  max-width: 700px;
+  width: 100%;
+  
+}
+
+.last-buttons div{
+  background-color: blueviolet;
+  height: 100%;
+  max-width: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.repeat {
+  
+}
+.change-time {
+}
+.go-on-first {
+}
+
+.first-buttons{
+  top: 24.390244%; /* 300/1230 */
+  max-height: 60px;
+  height: 100%;
+  max-width: 220px;
+  width: 100%;
+}
+
+.first-buttons div{
+  background-color: #46aef7;
+  height: 100%;
+  max-width: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+
+/* ====== SCREENS =========  */
+
+.screen.anime{
+  background-image: url('https://rare-gallery.com/uploads/posts/964943-anime-anime-girls-fan-art-Dark-Angel-wings-armor.png');
+}
